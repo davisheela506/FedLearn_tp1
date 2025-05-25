@@ -38,8 +38,8 @@ analyze_results.py: Visualizes results with python analyze_results.py [fl_result
 
 run_simulation.py: Orchestrates the simulation:
 
-Run python start_server.py.
-Run python run_client.py --cid INTEGER for each client (e.g., 0 to 9).
+Run python start_server.py.<br>
+Run python run_client.py --cid INTEGER for each client (e.g., 0 to 9).<br>
 Run python analyze_results.py to visualize results.
 
 ### Hyperparameters
@@ -48,9 +48,9 @@ Initial: 10 clients, 30 rounds, 1 epoch, α=1.0, batch size=32, learning rate=0.
 
 ### Simulation Results (May 25, 2025)
 
-Configuration: 10 clients, 30 rounds, 1 epoch, α=1.0 (based on output).
-Loss: Starts at 0.8509 (Round 1) and decreases to 0.3926 (Round 30).
-Accuracy: Increases from 61.56% (Round 1) to 84.29% (Round 30).
+Configuration: 10 clients, 30 rounds, 1 epoch, α=1.0 (based on output).<br>
+Loss: Starts at 0.8509 (Round 1) and decreases to 0.3926 (Round 30).<br>
+Accuracy: Increases from 61.56% (Round 1) to 84.29% (Round 30).<br>
 Plots: Loss, Accuracy
 
 ### Analysis
