@@ -8,7 +8,7 @@ In this TP, I explored the complete pipeline of building a federated learning sy
 
 ###  Step 1: Data Generation & Loading
 
-- data_utils.py: Generates distributed FashionMNIST datasets using Dirichlet distribution (saved in client_data) and loads client-specific DataLoader objects.
+data_utils.py: Generates distributed FashionMNIST datasets using Dirichlet distribution (saved in client_data) and loads client-specific DataLoader objects.
 
 ###  Step 2: Model Implementation
 
@@ -43,15 +43,15 @@ Run python run_client.py --cid INTEGER for each client (e.g., 0 to 9).
 Run python analyze_results.py to visualize results.
 
 ### Hyperparameters
+
 Initial: 10 clients, 30 rounds, 1 epoch, α=1.0, batch size=32, learning rate=0.01.
 
-### Experiments:
-Round 1: 10 clients, α=1.0, 30 rounds, 1 epoch. Loss: 1.38→0.38, Eval Accuracy: 66.5%→86.1%.
-Plots: Loss, Accuracy
+### Simulation Results (May 25, 2025)
 
-Round 2: α=0.5 (more heterogeneity).
-Round 3: 3 epochs.
-Round 4: 5 clients, 3 epochs.
+Configuration: 10 clients, 30 rounds, 1 epoch, α=1.0 (based on output).
+Loss: Starts at 0.8509 (Round 1) and decreases to 0.3926 (Round 30).
+Accuracy: Increases from 61.56% (Round 1) to 84.29% (Round 30).
+Plots: Loss, Accuracy
 
 ### Analysis
 Lower α increases data heterogeneity, potentially slowing convergence.
